@@ -97,6 +97,9 @@ fun CupcakeApp(
 
     val backStackEntry by navController.currentBackStackEntryAsState()
     // elvis operator used to  provide a default value of CupcakeScreen.Start.name.
+    // AND
+    // initialize the backstack entry and name of the current screen.
+
     val currentScreen = CupcakeScreen.valueOf(
         backStackEntry?.destination?.route ?: CupcakeScreen.Start.name
     )
